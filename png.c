@@ -288,6 +288,12 @@ png_set_text_2(png_const_structrp png_ptr, png_inforp info_ptr,
 
       key_len = strlen(text_ptr[i].key);
 
+      {
+         char key_label[32];
+         strcpy(key_label, text_ptr[i].key);
+         png_debug1(2, "storing text chunk with key %s", key_label);
+      }
+
       if (text_ptr[i].compression <= 0)
       {
          lang_len = 0;

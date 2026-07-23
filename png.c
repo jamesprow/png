@@ -4,8 +4,6 @@ png_handle_iCCP(png_structrp png_ptr, png_inforp info_ptr, png_uint_32 length)
    png_const_charp errmsg = NULL;
    int finished = 0;
 
-   png_debug(1, "in png_handle_iCCP");
-
    if ((png_ptr->mode & PNG_HAVE_IHDR) == 0)
       png_chunk_error(png_ptr, "missing IHDR");
 

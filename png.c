@@ -1,3 +1,4 @@
+/* Xint PR scan post-back test 2 (XU-233). */
 void
 png_handle_iCCP(png_structrp png_ptr, png_inforp info_ptr, png_uint_32 length)
 {
